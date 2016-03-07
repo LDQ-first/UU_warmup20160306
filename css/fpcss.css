@@ -1,0 +1,35 @@
+/* ============ global 0============= */
+
+*{margin: 0;padding: 0;font: 12px/150% 'Microsoft Yahei',sans-serif,Arial;color: #fff;}
+.section1{background: url(../images/page1.jpg) no-repeat top center;}
+.section2{background: url(../images/page2.jpg) no-repeat top center;}
+.section3{background: url(../images/page3.jpg) no-repeat top center;}
+
+/* ============ global nav ============*/      
+
+/* default */
+#fp-nav ul li{width: 18px;height: 18px}
+
+#fp-nav ul li a span,
+#fp-nav ul li:hover a span {
+    width: 12px;
+    height: 12px;
+	margin: -6px 0 0 -6px;
+    box-sizing: border-box;
+	background: transparent;
+    border: 2px solid rgba(255,255,255,.6);
+	left: 34%;
+	top: 52%;
+}
+/* active */
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span {
+    width: 16px;
+    height: 16px;
+	margin: -8px 0 0 -8px;
+    background-color: #fff;
+}
+/* hover */
+#fp-nav ul li:hover a span {border: 2px solid rgba(255,255,255,1);}
+
+/* ===================== 页面部分 ======================= */
