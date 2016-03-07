@@ -46,16 +46,15 @@
 }
 
 #intro_area{
+    display: flex;
+    justify-content: space-between;
     width: 1200px;
     height: 250px;
-    overflow: hidden;
     margin: 100px auto;
 }
 
 .intro_box{
     display: inline-block;
     width: 210px;
-    height: 250px;
-    margin-right: 25px;
     background-color: white;
 }
