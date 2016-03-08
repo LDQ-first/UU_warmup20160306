@@ -33,3 +33,56 @@
 #fp-nav ul li:hover a span {border: 2px solid rgba(255,255,255,1);}
 
 /* ===================== 页面部分 ======================= */
+
+/* ===================== Page 2 ========================= */
+.section2>h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.section2>h2{
+    font-size: 24px;
+    text-align: center;
+}
+
+#intro_area{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 250px;
+    margin: 100px auto;
+}
+
+.intro_box{
+    display: inline-block;
+    width: 210px;
+    text-align: center;
+    background-color: white;
+}
+
+.intro_box>img{
+    width: 96px;
+    height: 96px;
+    position: relative;
+    bottom: 20px;
+    border-radius: 50%;
+}
+
+.intro_box>h3{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.intro_box>h4{
+    color: black;
+    font-size: 15px;
+    text-align: center;
+}
+
+.intro_box>p{
+    margin-top: 10px;
+    color: black;
+    font-size: 7px;
+}
