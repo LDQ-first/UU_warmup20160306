@@ -56,5 +56,33 @@
 .intro_box{
     display: inline-block;
     width: 210px;
+    text-align: center;
     background-color: white;
+}
+
+.intro_box>img{
+    width: 96px;
+    height: 96px;
+    position: relative;
+    bottom: 20px;
+    border-radius: 50%;
+}
+
+.intro_box>h3{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.intro_box>h4{
+    color: black;
+    font-size: 15px;
+    text-align: center;
+}
+
+.intro_box>p{
+    margin-top: 10px;
+    color: black;
+    font-size: 7px;
 }
