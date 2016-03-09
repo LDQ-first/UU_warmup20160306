@@ -1,9 +1,9 @@
 /* ============ global 0============= */
 
 *{margin: 0;padding: 0;font: 12px/150% 'Microsoft Yahei',sans-serif,Arial;color: #fff;}
-.section1{background: url(../images/page1.jpg) no-repeat top center;}
-.section2{background: url(../images/page2.jpg) no-repeat top center;}
-.section3{background: url(../images/page3.jpg) no-repeat top center;}
+#fullpage .section{transition: background-color 1s ease;}
+.section1{background: url(../images/1.png) no-repeat top center;}
+.section3{background: url(../images/3.png) no-repeat top center;}
 
 /* ============ global nav ============*/      
 
