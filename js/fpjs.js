@@ -14,6 +14,27 @@ $(function(){
 		verticalCentered: false,
 
 		/*================ 各页面回调函数 ==================*/
+		/*================ page1 ==================*/
+
 
 	});
 });
+var g = function (id) {
+			if (id.substr(0,1)=='.') {
+				return document.getElementsByClassName(id.substr(1));
+			}
+			return document.getElementById(id);
+		}
+		function slider(){
+			var universe=g('universe');
+			universe.className+="_active";
+			var university=g('university');
+			university.className+="_active";
+			var sym=g('sym');
+			sym.className+="_active";
+		}
+window.onload = function(){
+			setTimeout(function(){
+				slider();
+			},100);
+		}		
