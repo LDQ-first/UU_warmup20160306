@@ -86,6 +86,7 @@
         }
 /* ===================== Page 2 ========================= */
 .section2>h1{
+    padding-top: 100px;
     font-size: 36px;
     text-align: center;
 }
