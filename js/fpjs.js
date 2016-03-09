@@ -12,29 +12,48 @@ $(function(){
 		// Design
 		sectionsColor: ['#ff5ca0', '#37df5f', '58a8ec'],
 		verticalCentered: false,
-
-		/*================ 各页面回调函数 ==================*/
-		/*================ page1 ==================*/
-
+		// Afterload
+		afterLoad: function (anchorLink,index){
+			switch(index){
+				case 1: 
+						break;
+				case 2: 
+						break;
+				case 3: 
+						break;
+			}
+		},
+		// Onleave
+		onLeave: function (index,nextIndex,direction){
+			switch(index){
+				case 1: 
+						break;
+				case 2: 
+						break;
+				case 3: 
+						break;
+			}
+		},
 
 	});
 });
+/*=========== page1 ============*/
 var g = function (id) {
 			if (id.substr(0,1)=='.') {
 				return document.getElementsByClassName(id.substr(1));
 			}
 			return document.getElementById(id);
 		}
-		function slider(){
-			var universe=g('universe');
-			universe.className+="_active";
-			var university=g('university');
-			university.className+="_active";
-			var sym=g('sym');
-			sym.className+="_active";
-		}
-window.onload = function(){
-			setTimeout(function(){
-				slider();
-			},100);
-		}		
+function slider(){
+	var universe=g('universe');
+	universe.className+="_active";
+	var university=g('university');
+	university.className+="_active";
+	var sym=g('sym');
+	sym.className+="_active";
+}
+// window.onload = function(){
+// 			setTimeout(function(){
+// 				slider();
+// 			},100);
+// 		}		
