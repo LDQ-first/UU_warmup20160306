@@ -18,9 +18,10 @@ $(function(){
 			// 加载不同屏时 调用并执行相应的动画函数
 			switch(index){
 				case 1: // 1.0 index背景颜色渐变成nextIndex的背景颜色 获得融合效果
+						flag=0;
 						$(".section").css("background-color","#ff5ca0");
 						setTimeout(function(){
-						slider1();
+						slider();
 						},100);
 						break;
 				case 2: 
@@ -39,8 +40,9 @@ $(function(){
 			}
 			// 离开不同屏时 调用并执行相应的函数 重置已被改变的样式
 			switch(index){
-				case 1: setTimeout(function(){
-						slider2();
+				case 1: flag=1;
+						setTimeout(function(){
+						slider();
 						},100);
 						break;
 				case 2: 
@@ -56,12 +58,14 @@ $(function(){
 var g = function (id) {
 	return document.getElementById(id);
 }
-function slider1(){
+var flag;
+function slider(){
+	var sym=g('sym0');
+	if(flag==0){
+		sym.className+="_active";
+	}
+	else{
+		sym.className=sym.className.replace(/_active/,"");
+	}
 
-	var sym=g('sym0');
-	sym.className+="_active";
-}
-function slider2(){
-	var sym=g('sym0');
-	sym.className="sym";
 }
