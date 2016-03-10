@@ -65,8 +65,3 @@ function slider2(){
 	var sym=g('sym0');
 	sym.className="sym";
 }
-// window.onload = function(){
-// 			setTimeout(function(){
-// 				slider();
-// 			},100);
-// 		}		
