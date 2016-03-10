@@ -61,11 +61,15 @@ var g = function (id) {
 var flag;
 function slider(){
 	var sym=g('sym0');
+	var sp=g('s1-pmove');
 	if(flag==0){
-		sym.className+="_active";
+		sym.className+=" sym_active";
+		setTimeout(function() {sp.className+=" s1-p-active";},300);
+		
 	}
 	else{
-		sym.className=sym.className.replace(/_active/,"");
+		sym.className=sym.className.replace(/ sym_active/,"");
+		setTimeout(function() {sp.className=sp.className.replace(/ s1-p-active/,"");},300);
 	}
 
 }
