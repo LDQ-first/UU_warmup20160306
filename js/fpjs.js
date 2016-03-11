@@ -26,7 +26,12 @@ $(function(){
 						break;
 				case 2: 
 						break;
-				case 3: 
+				case 3: /*在第三屏时，设置鼠标hover效果*/
+				 $(function(){
+							$(".team>h2,.work>h2").mouseover(function() {
+							$(this).next("ul").show();
+							});							
+						});
 						break;
 			}
 		},
@@ -47,7 +52,8 @@ $(function(){
 						break;
 				case 2: 
 						break;
-				case 3: 
+				case 3: /*离开第三屏，隐藏ul*/
+				$(".team>h2,.work>h2").next("ul").hide();
 						break;
 			}
 		},
