@@ -30,7 +30,7 @@ $(function(){
 				 $(function(){
 							$(".team>h2,.work>h2").mouseover(function() {
 							$(this).next("ul").show();
-							});							
+							});						
 						});
 						break;
 			}

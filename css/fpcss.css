@@ -84,36 +84,92 @@
     padding-top: 100px;
     font-size: 36px;
     text-align: center;
+	-webkit-transform: translateX(-1500px);
+            transform: translateX(-1500px);
+    transition: 2s;
+    transition-delay: 0.4s;
 }
-
+.section2.active h1{
+    -webkit-transform:translateY(0);
+            transform:translateY(0);
+}
 .section2>h2{
     font-size: 24px;
     text-align: center;
+	-webkit-transform: translateX(1500px);
+            transform: translateX(1500px);
+    transition: 2s;
+    transition-delay: 0.4s;
+}
+.section2.active h2{
+    -webkit-transform:translateY(0);
+            transform:translateY(0);
 }
 
-#intro_area{
+.intro_area{
     display: flex;
     justify-content: space-between;
     width: 1200px;
     height: 250px;
     margin: 100px auto;
+	-webkit-transform: translateY(1500px);
+            transform: translateY(1500px);
+    transition: 2s;
+    transition-delay: 0.4s;
 }
-
+.active .intro_area{
+    -webkit-transform:translateX(0);
+            transform:translateX(0);
+}
 .intro_box{
     display: inline-block;
     width: 210px;
     text-align: center;
-    background-color: white;
+    background-color: #bbb;
+	border-radius:10px;	
+	-webkit-box-shadow: 3px 3px 3px black;  
+    -moz-box-shadow: 3px 3px 3px black;  
+    box-shadow: 3px 3px 3px black;
 }
 
-.intro_box>img{
+.intro_box:hover{
+background-color:white;
+border-radius:20px;
+	
+-webkit-transform:scale(1.1);
+            transform:scale(1.1);
+-webkit-animation:y_rotate 1s;
+            animation:y_rotate 1s;		
+}
+@-webkit-keyframes y_rotate{
+    50%{-webkit-transform:rotateY(180deg);transform:rotateY(180deg);}
+	100%{-webkit-transform:rotateY(360deg);transform:rotateY(360deg);}
+}
+
+@keyframes y_rotate{
+    50%{-webkit-transform:rotateY(300deg);transform:rotateY(300deg);}
+} 
+
+
+.intro_box img{
     width: 96px;
     height: 96px;
     position: relative;
     bottom: 20px;
     border-radius: 50%;
 }
+.active .intro_box img {
+    -webkit-animation:z_rotate 2s 3s;
+            animation:z_rotate 2s 3s;
+} 
 
+@-webkit-keyframes z_rotate{
+    50%{-webkit-transform:rotateZ(270deg);transform:rotateZ(270deg);}
+}
+
+@keyframes z_rotate{
+    50%{-webkit-transform:rotateZ(270deg);transform:rotateZ(270deg);}
+} 
 .intro_box>h3{
     color: black;
     font-weight: bold;
@@ -132,6 +188,9 @@
     color: black;
     font-size: 7px;
 }
+    
+
+
 
 /* ===================== Page 3 ========================= */
 /*溢出隐藏*/
