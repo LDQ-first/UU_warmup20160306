@@ -22,7 +22,7 @@ $(function(){
 						$(".section").css("background-color","#ff5ca0");
 						setTimeout(function(){
 						slider();
-						},100);
+						},10);
 						break;
 				case 2: 
 						break;
@@ -75,7 +75,7 @@ function slider(){
 	}
 	else{
 		sym.className=sym.className.replace(/ sym_active/,"");
-		setTimeout(function() {sp.className=sp.className.replace(/ s1-p-active/,"");},300);
+		sp.className=sp.className.replace(/ s1-p-active/,"");
 	}
 
 }
