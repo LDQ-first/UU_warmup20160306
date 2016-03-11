@@ -28,8 +28,16 @@ $(function(){
 						break;
 				case 3: /*在第三屏时，设置鼠标hover效果*/
 				 $(function(){
-							$(".team>h2,.work>h2").mouseover(function() {
+							/*$(".team>h2,.work>h2").mouseover(function() {
 							$(this).next("ul").show();
+							});*/		
+							$(".team>h2").mouseover(function() {
+							$(this).next("ul").show();
+							$(".work>h2").next("ul").hide(0);
+							});	
+							$(".work>h2").mouseover(function() {
+							$(this).next("ul").show();
+							$(".team>h2").next("ul").hide(0);
 							});						
 						});
 						break;
