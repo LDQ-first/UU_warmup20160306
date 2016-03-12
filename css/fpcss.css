@@ -36,7 +36,6 @@ li{list-style: none;}a{text-decoration: none;}
 /* for 480px or less */
 @media screen and (max-width: 1200px) {#fp-nav {display: none;}}
 
-
 /* ===================== header nav ========================= */
 
 .hd {
@@ -62,20 +61,21 @@ li{list-style: none;}a{text-decoration: none;}
     padding: 0 20px;
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     display: block;
     transition: all 0.5s;
 }
 
 .hd nav li.active a,
-.hd nav li.active a:hover {
+.hd nav li.active a:hover,
+.hd nav li a:hover {
     background: transparent;
-    color: rgba(0, 0, 0, 0.6)
+    color: rgba(0, 0, 0, 0.6);
 }
 
 /* ===================== Page 1 ========================= */
 
-.section1{min-height: 310px}
+.section1{min-height: 610px}
 
 /* 3 div ：title  background  p */
 .s1-tit{height: 40%;text-align: center;}
@@ -135,9 +135,10 @@ li{list-style: none;}a{text-decoration: none;}
     text-align: center;
     background-color: white;
 	border-radius:10px;	
-	-webkit-box-shadow: 3px 3px 3px black;  
-       -moz-box-shadow: 3px 3px 3px black;  
-            box-shadow: 3px 3px 3px black;
+    
+	-webkit-box-shadow: 0px 5px 5px rgba(0,0,0,0.3), 0 0 25px rgba(0,0,0,0.3) inset;  
+       -moz-box-shadow: 0px 5px 5px rgba(0,0,0,0.3), 0 0 25px rgba(0,0,0,0.3) inset;
+            box-shadow: 0px 5px 5px rgba(0,0,0,0.3), 0 0 25px rgba(0,0,0,0.3) inset;
 }
 
 .intro_box:hover{
@@ -224,10 +225,10 @@ li{list-style: none;}a{text-decoration: none;}
     width:96px;
     height:96px;
     margin:20px;
-    border:10px solid #3e85c2;
+    border:10px solid #fffb02;
     border-radius:50%;
-    border-right-color:#58ABEC;
-    border-bottom-color:#3e85c2;  
+    border-right-color:#37aedf;
+    border-bottom-color:#fffb02;  
 }
 
 /*滚动到第三屏时，li的样式*/
@@ -244,9 +245,9 @@ li{list-style: none;}a{text-decoration: none;}
     50%{-webkit-transform:rotateZ(300deg);transform:rotateZ(300deg);}
 }
 
-.section3 .icon .HTML{background: url(../images/html_96px.png) no-repeat center }
-.section3 .icon .CSS{background: url(../images/css_96px.png) no-repeat center}
-.section3 .icon .JS{background: url(../images/js_96px.png) no-repeat center}
+.section3 .icon .HTML{background: url(../images/html_96px.png) no-repeat center;}
+.section3 .icon  .CSS{background: url(../images/css_96px.png) no-repeat center;}
+.section3 .icon   .JS{background: url(../images/js_96px.png) no-repeat center;}
 
 /* 内容样式 */
 .section3 .team,.section3 .work{
@@ -290,10 +291,10 @@ li{list-style: none;}a{text-decoration: none;}
     padding:10px 15px;
     display: none;
     border-radius:10px; 
-    background:-webkit-linear-gradient(left,rgba(62,133,194, 1) 0%, rgba(92,162,236, 0) 100%);
-    background:   -moz-linear-gradient(left,rgba(62,133,194, 1) 0%, rgba(92,162,236, 0) 100%);
-    background:     -o-linear-gradient(left,rgba(62,133,194, 1) 0%, rgba(92,162,236, 0) 100%);
-    background:        linear-gradient(left,rgba(62,133,194, 1) 0%, rgba(92,162,236, 0) 100%);
+    background:-webkit-linear-gradient(left,rgba(55,165,222, 1) 0%, rgba(55,174,223, 0) 100%);
+    background:   -moz-linear-gradient(left,rgba(55,165,222, 1) 0%, rgba(55,174,223, 0) 100%);
+    background:     -o-linear-gradient(left,rgba(55,165,222, 1) 0%, rgba(55,174,223, 0) 100%);
+    background:        linear-gradient(left,rgba(55,165,222, 1) 0%, rgba(55,174,223, 0) 100%);
 }
 
 .section3 .team ul li,.section3 .work ul li{
@@ -305,7 +306,7 @@ li{list-style: none;}a{text-decoration: none;}
 
 .section3 .team ul li:hover,.section3 .work ul li:hover{
     color:#fff;
-    background: #58a8ec;
+    background: #37aedf;
     -webkit-transform:scale(1.5);
             transform:scale(1.5);
 }

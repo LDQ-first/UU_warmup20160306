@@ -14,11 +14,10 @@ $(function(){
 		anchors:['Page1', 'Page2', 'Page3'],
 		navigation: true,
 		navigationPosition: 'left',
-		navigationTooltips: ['开启新旅程', '团队介绍','分工&制作说明'],
 		// Scrolling
 		scrollingSpeed: 500,
 		// Design
-		sectionsColor: ['#ff5ca0', '#37df5f', '#58a8ec'],
+		sectionsColor: ['#ff5ca0', '#37df5f', '#37aedf'],
 		verticalCentered: false,
 		menu:"#menu",
 		
@@ -63,7 +62,7 @@ $(function(){
 			switch(nextIndex){
 				case 1:$(".section").css("background-color","#ff5ca0");break;
 				case 2:$(".section").css("background-color","#37df5f");break;
-				case 3:$(".section").css("background-color","#58a8ec");break;
+				case 3:$(".section").css("background-color","#37aedf");break;
 			}
 			// 离开不同屏时 调用并执行相应的函数 重置已被改变的样式
 			switch(index){
