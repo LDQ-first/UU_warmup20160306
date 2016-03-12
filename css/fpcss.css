@@ -4,6 +4,7 @@
 #fullpage .section{min-width: 400px;transition: background-color 1s ease;}
 .section2{background: url(../images/2.png) no-repeat top center;}
 .section3{background: url(../images/3.png) no-repeat top center;}
+li{list-style: none;}a{text-decoration: none;}
 
 /* ============ global nav ============*/      
 
@@ -54,7 +55,6 @@
 
 .hd nav li {
     float: left;
-    list-style: none;
 }
 
 .hd nav li a {
@@ -63,7 +63,6 @@
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
     font-size: 16px;
-    text-decoration: none;
     display: block;
     transition: all 0.5s;
 }
@@ -100,6 +99,7 @@
 .s1-p-active{opacity: 1;}
 
 /* ===================== Page 2 ========================= */
+
 #team{
     padding-top: 120px;
     font-size: 36px;
@@ -135,17 +135,16 @@
     background-color: white;
 	border-radius:10px;	
 	-webkit-box-shadow: 3px 3px 3px black;  
-    -moz-box-shadow: 3px 3px 3px black;  
-    box-shadow: 3px 3px 3px black;
+       -moz-box-shadow: 3px 3px 3px black;  
+            box-shadow: 3px 3px 3px black;
 }
 
 .intro_box:hover{
-background-color:white;
-border-radius:20px;
-	
--webkit-transform:scale(1.1);
-            transform:scale(1.1);
-		
+    background-color:white;
+    border-radius:20px;
+    	
+    -webkit-transform:scale(1.1);
+            transform:scale(1.1);		
 }
 
 .intro_box img{
@@ -155,18 +154,18 @@ border-radius:20px;
     bottom: 20px;
     border-radius: 50%;
 }
+
 .active .intro_box img {
     -webkit-animation:z_rotate 2s 3s;
             animation:z_rotate 2s 3s;
 } 
-
 @-webkit-keyframes z_rotate{
     50%{-webkit-transform:rotateZ(270deg);transform:rotateZ(270deg);}
 }
-
 @keyframes z_rotate{
     50%{-webkit-transform:rotateZ(270deg);transform:rotateZ(270deg);}
 } 
+
 .intro_box>h3{
     color: black;
     font-weight: bold;
@@ -187,6 +186,7 @@ border-radius:20px;
 }
     
 /* ===================== Page 3 ========================= */
+
 /*溢出隐藏*/
 .section{
     overflow: hidden; 
@@ -213,7 +213,6 @@ border-radius:20px;
 
 /*li初始样式*/
 .section3 .icon li{  
-    list-style: none;  
     float: left;
     width:96px;
     height:96px;
@@ -291,7 +290,6 @@ border-radius:20px;
 }
 
 .section3 .team ul li,.section3 .work ul li{
-    list-style: none;
     font-weight: normal;
     font-size:18px;
     line-height: 35px;
