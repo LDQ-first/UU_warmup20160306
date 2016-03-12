@@ -142,6 +142,14 @@ li{list-style: none;}a{text-decoration: none;}
             box-shadow: 0 0 25px rgba(0,0,0,0.1) inset;
 }
 
+/* .intro_box:hover{
+    background-color:white;
+    border-radius:20px;
+        
+    -webkit-transform:scale(1.1);
+            transform:scale(1.1);       
+} */
+
 .intro_box:after{content: '';background: transparent;
                 position: absolute;z-index: -5;
                 top: 12%;bottom: 9px;left: 21px;right: 29px;
