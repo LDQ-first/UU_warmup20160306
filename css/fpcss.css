@@ -119,6 +119,7 @@ li{list-style: none;}a{text-decoration: none;}
     width: 1200px;
     height: 250px;
     margin: 70px auto;
+    transition：all 0.5s
 	-webkit-transform: translateY(1500px);
             transform: translateY(1500px);
     transition: 2s;
@@ -152,7 +153,13 @@ li{list-style: none;}a{text-decoration: none;}
     height: 96px;
     position: relative;
     bottom: 20px;
-    border-radius: 50%;
+    border:2px solid black;
+    border-color: #eee;
+    border-radius:50%;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, .5), 0 1px 3px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, .5), 0 1px 3px rgba(0, 0, 0, .5);
+    -o-box-shadow: 0 1px 5px rgba(0, 0, 0, .5), 0 1px 3px rgba(0, 0, 0, .5);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .5), 0 1px 3px rgba(0, 0, 0, .5);
 }
 
 .active .intro_box img {
