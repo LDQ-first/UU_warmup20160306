@@ -130,3 +130,6 @@ function ray1(){
 	g('team').style.opacity = b;
 	g('intro').style.opacity = b;
 }
+
+$('.intro_box').bind('mouseover',function(){$(this).css({'width':'231px','height':'275px'});})
+			   .bind('mouseout', function(){$(this).css({'width':'210px','height':'250px'});});
