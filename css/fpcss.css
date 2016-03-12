@@ -42,7 +42,7 @@
 
 /* title : 初始及切入样式 sym  sym_active*/
 .sym, .sym_active{
-    min-width: 616px;    
+    min-width: 670px;    
     margin-top: 15%;
     display: inline-block;
 }
@@ -71,14 +71,16 @@
 
 /* content : 初始样式及切入样式 s1-p  s1-p-active */
 .s1-p{
-    transition:all 1s ease-out;
+    transition:all 0.5s ease-out;
     position: relative;
-    top: 10%;
+    top: -25%;
     left: 55%;
+    opacity: 0;
 }
 .s1-p-active{
-    top: -25%;
+    opacity: 1;
 }
+
 /* ===================== Page 2 ========================= */
 #team{
     padding-top: 100px;
