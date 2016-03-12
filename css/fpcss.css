@@ -323,3 +323,38 @@ li{list-style: none;}a{text-decoration: none;}
     -webkit-transform:scale(1.5);
             transform:scale(1.5);
 }
+
+/*Icon hover后的效果*/
+.section3 .icon li .info{
+    height:96px;
+    width:96px;
+    border-radius:50%;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    opacity: 0;   
+    transform:;
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out
+}
+
+.section3 .icon li .info h3{
+    position: relative;
+    top:24px;
+    text-align:center;
+    font-size: 14px;
+}
+
+
+.section3 .icon li .info p{
+    position: relative;
+    top:24px;
+    text-align:center;
+    font-size: 12px;
+    border-top: 1px solid rgba(255, 255, 255, .5)
+}
+
+.section3 .icon li:hover .info{
+    opacity: 1
+}
