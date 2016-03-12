@@ -3,7 +3,7 @@ $(function(){
 		/*================ 初始配置 ==================*/
 
 		// Navigation
-		anchors:['firstPage', 'secondPage', 'thirdPage'],
+		anchors:['Page1', 'Page2', 'Page3'],
 		navigation: true,
 		navigationPosition: 'left',
 		navigationTooltips: ['开启新旅程', '团队介绍','分工&制作说明'],
@@ -12,7 +12,8 @@ $(function(){
 		// Design
 		sectionsColor: ['#ff5ca0', '#37df5f', '#58a8ec'],
 		verticalCentered: false,
-
+		menu:"#menu",
+		
 		// Afterload
 		afterLoad: function (anchorLink,index){
 			// 加载不同屏时 调用并执行相应的动画函数
