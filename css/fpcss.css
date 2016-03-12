@@ -71,20 +71,36 @@
     text-decoration: none;
 }
 
-.hd nav li:nth-child(1) a:hover, .hd nav li:nth-child(1).active a {
+/* .hd nav li:nth-child(1) a:hover,  */.hd nav li:nth-child(1).active a {
     background: #FF5CA0;
     color: rgba(0, 0, 0, 0.6)
 }
 
-.hd nav li:nth-child(2) a:hover, .hd nav li:nth-child(2).active a {
+.hd nav li:nth-child(1) a:hover{
+    background:transparent;
+    color: rgba(0, 0, 0, 0.6)
+}
+
+/* .hd nav li:nth-child(2) a:hover, */ .hd nav li:nth-child(2).active a {
     background: #37DF5F;
     color: rgba(0, 0, 0, 0.6)
 }
 
-.hd nav li:nth-child(3) a:hover, .hd nav li:nth-child(3).active a {
+.hd nav li:nth-child(2) a:hover{
+    background:transparent;
+    color: rgba(0, 0, 0, 0.6)
+}
+
+/* .hd nav li:nth-child(3) a:hover, */ .hd nav li:nth-child(3).active a {
     background: #58ABEC;
     color: rgba(0, 0, 0, 0.6)
 }
+
+.hd nav li:nth-child(3) a:hover{
+    background:transparent;
+    color: rgba(0, 0, 0, 0.6)
+}
+
 
 
 
