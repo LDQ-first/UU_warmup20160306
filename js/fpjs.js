@@ -1,3 +1,11 @@
+/* 通用函数 */
+var g = function (id) {
+	if ( id.substr(0,1)=='.' ) {
+		return document.getElementsByClassName(id.substr(1));
+	}
+	return document.getElementById(id);
+}
+
 $(function(){
 	$("#fullpage").fullpage({
 		/*================ 初始配置 ==================*/
@@ -19,8 +27,9 @@ $(function(){
 			// 加载不同屏时 调用并执行相应的动画函数
 			switch(index){
 				case 1: // 1.0 index背景颜色渐变成nextIndex的背景颜色 获得融合效果
-						flag=0;
 						$(".section").css("background-color","#ff5ca0");
+
+						flag=0;
 						setTimeout(function(){
 						slider();
 						},10);
@@ -37,12 +46,12 @@ $(function(){
 							$(this).next("ul").show();
 							});*/		
 							$(".team>h2").mouseover(function() {
-							$(this).next("ul").show();
-							$(".work>h2").next("ul").hide(500);
+								$(this).next("ul").show(500);
+								$(".work>h2").next("ul").hide(500);
 							});	
 							$(".work>h2").mouseover(function() {
-							$(this).next("ul").show();
-							$(".team>h2").next("ul").hide(500);
+								$(this).next("ul").show(500);
+								$(".team>h2").next("ul").hide(500);
 							});						
 						});
 						break;
@@ -78,9 +87,7 @@ $(function(){
 	});
 });
 /*=========== page1 ============*/
-var g = function (id) {
-	return document.getElementById(id);
-}
+
 var flag;
 function slider(){
 	var sym=g('sym0');
@@ -96,6 +103,8 @@ function slider(){
 	}
 
 }
+
+/*=========== page2 ============*/
 var b;
 var c;
 var tid;
@@ -106,8 +115,8 @@ function ray(){
 			clearTimeout(tid);
 		}
 	}
-	document.getElementById('team').style.opacity = b;
-	document.getElementById('intro').style.opacity = b;
+	g('team').style.opacity = b;
+	g('intro').style.opacity = b;
 	tid=setTimeout(function(){
 		ray();
 	},100);
@@ -119,6 +128,6 @@ function ray1(){
 			clearTimeout(tid);
 		}
 	}
-	document.getElementById('team').style.opacity = b;
-	document.getElementById('intro').style.opacity = b;
+	g('team').style.opacity = b;
+	g('intro').style.opacity = b;
 }

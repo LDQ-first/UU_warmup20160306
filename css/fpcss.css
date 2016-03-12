@@ -32,15 +32,15 @@
 /* hover */
 #fp-nav ul li:hover a span {border: 2px solid rgba(255,255,255,1);}
 
+/* for 480px or less */
+@media screen and (max-width: 1200px) {#fp-nav {display: none;}}
 
-/* ===================== head ========================= */
 
-
+/* ===================== header nav ========================= */
 
 .hd {
     width: 100%;
     height: 45px;
-    background: rgba(255, 255, 255, 0.2);
     position: fixed;
     top: 0;
     left: 0;
@@ -48,13 +48,8 @@
 }
 
 .hd .inner {
-    width: 950px;
+    min-width: 380px;
     height: 45px;
-    margin: 0 auto;
-}
-
-.hd nav {
-    float: left;
 }
 
 .hd nav li {
@@ -64,51 +59,23 @@
 
 .hd nav li a {
     line-height: 45px;
-    display: block;
     padding: 0 20px;
+    background: rgba(255, 255, 255, 0.2);
     color: #fff;
     font-size: 16px;
     text-decoration: none;
+    display: block;
+    transition: all 0.5s;
 }
 
-/* .hd nav li:nth-child(1) a:hover,  */.hd nav li:nth-child(1).active a {
-    background: #FF5CA0;
+.hd nav li.active a,
+.hd nav li.active a:hover {
+    background: transparent;
     color: rgba(0, 0, 0, 0.6)
 }
-
-.hd nav li:nth-child(1) a:hover{
-    background:transparent;
-    color: rgba(0, 0, 0, 0.6)
-}
-
-/* .hd nav li:nth-child(2) a:hover, */ .hd nav li:nth-child(2).active a {
-    background: #37DF5F;
-    color: rgba(0, 0, 0, 0.6)
-}
-
-.hd nav li:nth-child(2) a:hover{
-    background:transparent;
-    color: rgba(0, 0, 0, 0.6)
-}
-
-/* .hd nav li:nth-child(3) a:hover, */ .hd nav li:nth-child(3).active a {
-    background: #58ABEC;
-    color: rgba(0, 0, 0, 0.6)
-}
-
-.hd nav li:nth-child(3) a:hover{
-    background:transparent;
-    color: rgba(0, 0, 0, 0.6)
-}
-
-
-
-
-
-
-
 
 /* ===================== Page 1 ========================= */
+
 .section1{min-height: 310px}
 
 /* 3 div ：title  background  p */
@@ -117,76 +84,34 @@
 .s1-p{height: 10%;}
 
 /* title : 初始及切入样式 sym  sym_active*/
-.sym, .sym_active{
-    min-width: 670px;    
-    margin-top: 15%;
-    display: inline-block;
-}
+.sym, .sym_active{min-width: 670px;margin-top: 15%;display: inline-block;}
 
 /* title : 初始样式 sym  i */
-.sym{
-    width: 100%;
-    transition:all 0.8s;
-    text-align: center;
-    opacity: 0;
-}
-.sym,i{
-    font-size: 3rem;
-    font-weight: bolder;
-    font-family: Arial,sans-serif;
-    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
-}
+.sym{width: 100%;text-align: center;opacity: 0;transition:all 0.8s;}
+.sym,i{font: 3rem Arial,sans-serif;font-weight: bolder;text-shadow: 0 1px 3px rgba(0,0,0,0.3);}
 #s1-tit-1{float: left;}
 #s1-tit-2{float: right;}
 
 /* title : 切入样式 sym_active */
-.sym_active{
-    opacity: 1;
-    width: 49.5%;
-}
+.sym_active{opacity: 1;width: 49.5%;}
 
 /* content : 初始样式及切入样式 s1-p  s1-p-active */
-.s1-p{
-    transition:all 0.5s ease-out;
-    position: relative;
-    top: -25%;
-    left: 55%;
-    opacity: 0;
-}
-.s1-p-active{
-    opacity: 1;
-}
+.s1-p{position: relative;top: -25%;left: 55%;opacity: 0;transition:all 0.5s ease-out;}
+.s1-p-active{opacity: 1;}
 
 /* ===================== Page 2 ========================= */
 #team{
     padding-top: 120px;
     font-size: 36px;
     text-align: center;
-	text-shadow:0 1px 1px black;opacity:0;
-	/*-webkit-transform: translateX(-1500px);
-            transform: translateX(-1500px);
-    transition: 2s;
-    transition-delay: 0.4s;*/
+	text-shadow:0 1px 2px rgba(0,0,0,0.5);opacity:0;
 }
 
-/*.section2.active h1{
-    -webkit-transform:translateY(0);
-            transform:translateY(0);
-}*/
 #intro{
     font-size: 24px;
     text-align: center;
-	text-shadow:0 1px 1px black;opacity:0;
-	/*-webkit-transform: translateX(1500px);
-            transform: translateX(1500px);
-    transition: 2s;
-    transition-delay: 0.4s;*/
+	text-shadow:0 1px 2px rgba(0,0,0,0.5);opacity:0;
 }
-
-/*.section2.active h2{
-    -webkit-transform:translateY(0);
-            transform:translateY(0);
-}*/
 
 .intro_area{
     display: flex;
@@ -222,7 +147,6 @@ border-radius:20px;
             transform:scale(1.1);
 		
 }
-
 
 .intro_box img{
     width: 96px;
@@ -262,9 +186,6 @@ border-radius:20px;
     font-size: 7px;
 }
     
-
-
-
 /* ===================== Page 3 ========================= */
 /*溢出隐藏*/
 .section{
@@ -299,7 +220,7 @@ border-radius:20px;
     margin:20px;
     border:10px solid #3e85c2;
     border-radius:50%;
-    border-right-color:#5ca2ec;
+    border-right-color:#58ABEC;
     border-bottom-color:#3e85c2;  
 }
 
@@ -321,7 +242,7 @@ border-radius:20px;
 .section3 .icon .CSS{background: url(../images/css_96px.png) no-repeat center}
 .section3 .icon .JS{background: url(../images/js_96px.png) no-repeat center}
 
-
+/* 内容样式 */
 .section3 .team,.section3 .work{
     width:550px;
     margin:10px auto;
@@ -335,6 +256,7 @@ border-radius:20px;
     line-height: 60px;
     margin:0 auto;
     text-align:center;
+    text-shadow: 0 1px 1px #00f;
     cursor:pointer;  
 }
 
@@ -352,18 +274,10 @@ border-radius:20px;
     transition-delay: 0.3s;
 }
 
-
 .section3.active .team h2,.section3.active .work h2{
     -webkit-transform:translateX(0);
             transform:translateX(0);
 }
-
-/*.section3.active .team h2:hover,.section3.active .work h2:hover{
-    color:#F97428;
-    -webkit-transform:scale(1.2);
-            transform:scale(1.2);
-}
-*/
 
 .section3 .team ul,.section3 .work ul{
     margin:10px auto;
@@ -371,12 +285,10 @@ border-radius:20px;
     display: none;
     border-radius:10px; 
     background:-webkit-linear-gradient(left,rgba(62,133,194, 1) 0%, rgba(92,162,236, 0) 100%);
-    background:-moz-linear-gradient(left,rgba(62,133,194, 1) 0%, rgba(92,162,236, 0) 100%);
-    background:-o-linear-gradient(left,rgba(62,133,194, 1) 0%, rgba(92,162,236, 0) 100%);
-    background:linear-gradient(left,rgba(62,133,194, 1) 0%, rgba(92,162,236, 0) 100%);
+    background:   -moz-linear-gradient(left,rgba(62,133,194, 1) 0%, rgba(92,162,236, 0) 100%);
+    background:     -o-linear-gradient(left,rgba(62,133,194, 1) 0%, rgba(92,162,236, 0) 100%);
+    background:        linear-gradient(left,rgba(62,133,194, 1) 0%, rgba(92,162,236, 0) 100%);
 }
-
-
 
 .section3 .team ul li,.section3 .work ul li{
     list-style: none;
@@ -392,4 +304,3 @@ border-radius:20px;
     -webkit-transform:scale(1.5);
             transform:scale(1.5);
 }
-
