@@ -32,6 +32,66 @@
 /* hover */
 #fp-nav ul li:hover a span {border: 2px solid rgba(255,255,255,1);}
 
+
+/* ===================== head ========================= */
+
+
+
+.hd {
+    width: 100%;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hd .inner {
+    width: 950px;
+    height: 45px;
+    margin: 0 auto;
+}
+
+.hd nav {
+    float: left;
+}
+
+.hd nav li {
+    float: left;
+    list-style: none;
+}
+
+.hd nav li a {
+    line-height: 45px;
+    display: block;
+    padding: 0 20px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.hd nav li:nth-child(1) a:hover, .hd nav li:nth-child(1).active a {
+    background: #FF5CA0;
+    color: rgba(0, 0, 0, 0.6)
+}
+
+.hd nav li:nth-child(2) a:hover, .hd nav li:nth-child(2).active a {
+    background: #37DF5F;
+    color: rgba(0, 0, 0, 0.6)
+}
+
+.hd nav li:nth-child(3) a:hover, .hd nav li:nth-child(3).active a {
+    background: #58ABEC;
+    color: rgba(0, 0, 0, 0.6)
+}
+
+
+
+
+
+
+
 /* ===================== Page 1 ========================= */
 .section1{min-height: 310px}
 

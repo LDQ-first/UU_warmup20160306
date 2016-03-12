@@ -3,12 +3,13 @@ $(function(){
 		/*================ 初始配置 ==================*/
 
 		// Navigation
-		anchors:['firstPage', 'secondPage', 'thirdPage'],
+		anchors:['Page1', 'Page2', 'Page3'],
 		navigation: true,
 		navigationPosition: 'left',
 		// Design
 		sectionsColor: ['#37df5f', '#58a8ec', '#ff5ca0'],
 		verticalCentered: false,
+
 		afterLoad: function (anchorLink,index){
 			// 加载不同屏时 调用并执行相应的动画函数
 			switch(index){
