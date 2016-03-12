@@ -86,7 +86,7 @@
     padding-top: 100px;
     font-size: 36px;
     text-align: center;
-	text-shadow:2px 2px 2px black;opacity:0;
+	text-shadow:0 1px 1px black;opacity:0;
 	/*-webkit-transform: translateX(-1500px);
             transform: translateX(-1500px);
     transition: 2s;
@@ -100,7 +100,7 @@
 #intro{
     font-size: 24px;
     text-align: center;
-	text-shadow:2px 2px 2px black;opacity:0;
+	text-shadow:0 1px 1px black;opacity:0;
 	/*-webkit-transform: translateX(1500px);
             transform: translateX(1500px);
     transition: 2s;
