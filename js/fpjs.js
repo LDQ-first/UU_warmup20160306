@@ -108,27 +108,10 @@ var b;
 var c;
 var tid;
 function ray(){
-	if(c) {
-		b += 0.1;
-		if (b == 1.00) {
-			clearTimeout(tid);
-		}
-	}
-	g('team').style.opacity = b;
-	g('intro').style.opacity = b;
-	tid=setTimeout(function(){
-		ray();
-	},100);
+	$('#team,#intro').animate({opacity: 1}, 1800);
 }
 function ray1(){
-	if(!c) {
-		b -= 1;
-		if (b == 0.00) {
-			clearTimeout(tid);
-		}
-	}
-	g('team').style.opacity = b;
-	g('intro').style.opacity = b;
+	$('#team,#intro').animate({opacity: 0}, 1800);
 }
 
 $('.intro_box').bind('mouseover',function(){$(this).css({'width':'231px','height':'275px'});})
