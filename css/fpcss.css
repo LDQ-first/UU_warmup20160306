@@ -101,6 +101,7 @@ li{list-style: none;}a{text-decoration: none;}
 /* ===================== Page 2 ========================= */
 
 #team{
+    font-family: '宋体';
     padding-top: 120px;
     font-size: 36px;
     text-align: center;
@@ -132,14 +133,15 @@ li{list-style: none;}a{text-decoration: none;}
     display: inline-block;
     width: 210px;
     text-align: center;
+    background: url(../images/box_bg.png) no-repeat center;
     background-color: white;
     border-radius:10px;	
     transition: all 0.5s;
     position: relative;
     
-	-webkit-box-shadow: 0 0 25px rgba(0,0,0,0.1) inset;  
-       -moz-box-shadow: 0 0 25px rgba(0,0,0,0.1) inset;
-            box-shadow: 0 0 25px rgba(0,0,0,0.1) inset;
+	-webkit-box-shadow: 0 0 25px rgba(0,0,0,0.2) inset;  
+       -moz-box-shadow: 0 0 25px rgba(0,0,0,0.2) inset;
+            box-shadow: 0 0 25px rgba(0,0,0,0.2) inset;
 }
 
 /* .intro_box:hover{
@@ -190,20 +192,27 @@ li{list-style: none;}a{text-decoration: none;}
 .intro_box>h3{
     color: #444;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
 }
 
 .intro_box>h4{
+    width: 80%;
+    margin:0 auto;
+    padding-bottom: 12px;
     color: #555;
     font-size: 15px;
     text-align: center;
+    border-bottom: 1px dashed #aaa;
 }
 
 .intro_box>p{
+    width: 80%;
+    margin:0 auto;
     margin-top: 10px;
     color: black;
-    font-size: 7px;
+    font-size: 12px;
+    line-height: 20px;
 }
     
 /* ===================== Page 3 ========================= */
@@ -238,10 +247,10 @@ li{list-style: none;}a{text-decoration: none;}
     width:96px;
     height:96px;
     margin:20px;
-    border:10px solid #fffb02;
+    border:10px solid #caf4ed;
     border-radius:50%;
     border-right-color:#37aedf;
-    border-bottom-color:#fffb02;  
+    border-bottom-color:#caf4ed;  
 }
 
 /*滚动到第三屏时，li的样式*/

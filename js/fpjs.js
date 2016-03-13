@@ -27,10 +27,9 @@ $(function(){
 			switch(index){
 				case 1: // 1.0 index背景颜色渐变成nextIndex的背景颜色 获得融合效果
 						$(".section").css("background-color","#ff5ca0");
-
 						flag=0;
 						setTimeout(function(){
-						slider();
+							slider();
 						},10);
 						break;
 				case 2: b = 0;
