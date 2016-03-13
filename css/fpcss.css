@@ -36,6 +36,19 @@ li{list-style: none;}a{text-decoration: none;}
 /* for 480px or less */
 @media screen and (max-width: 1200px) {#fp-nav {display: none;}}
 
+/*===================GitHub库=========================*/
+#social {
+   position: fixed;
+   top: 0;
+   right: 0;
+   margin: 1rem;
+   z-index: 70;
+   color: #FFF;
+}
+
+#social i:hover {color: #000;}
+
+
 /* ===================== header nav ========================= */
 
 .hd {
